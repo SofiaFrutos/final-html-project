@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --fondo: #f5f5f5;
+  --primario: #fcebff;
+  --secundario: #c993ce;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--fondo);
+}
+main {
+  display: flex;
+
+  gap: 100px;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  padding: 30px;
+}
+
+input,
+select {
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  padding: 7px;
+  margin-left: 30px;
+}
+
+button {
+  background-color: var(--secundario);
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  font-family: "urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+form {
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.genero-row {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Espacio entre el texto y el select */
+}

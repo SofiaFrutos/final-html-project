@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --fondo: #f5f5f5;
+  --primario: #fcebff;
+  --secundario: #c993ce;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--fondo);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 100;
+}
+.list-nav {
+  display: flex;
+  gap: 70px;
+  right: 20px;
+  white-space: nowrap;
+  align-items: center;
+  position: relative top;
+}
+
+.search-bar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  z-index: 200;
+}
+.list-nav a {
+  font-family: "Urbanist", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+
+.list-nav img,
+nav img,
+.search-bar img,
+.search-bar a img {
+  width: 20px;
+  height: 22px;
+}
+
+.oferta {
+  background-color: #fcebff;
+  text-align: center;
+  padding: 30px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 100px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.seccion_1 {
+  display: flex;
+  gap: 60px;
+  max-width: 1300px;
+}
+
+.texto-info h1 {
+  font-family: "urbanist", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.texto-info p {
+  font-family: "urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+div p span,
+.linea p span {
+  font-weight: bold;
+}
+
+div h1 span {
+  font-weight: 600;
+  font-family: "atma", sans-serif;
+}
+
+div button {
+  background-color: var(--secundario);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "urbanist", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+div img {
+  width: 700px;
+  height: 450px;
+}
+
+.seccion_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+}
+.seccion_2 h2 {
+  font-family: "atma", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  margin-top: 50px;
+}
+.info-cards-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  flex-direction: row;
+  align-items: space-between;
+  max-width: 1400px;
+}
+.info-cards {
+  background-color: var(--fondo);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.info-cards p {
+  font-family: "urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.info-cards img {
+  width: 50px;
+  height: 50px;
+}
+
+.seccion_3,
+.seccion_5 {
+  background-image: url("fondo.png");
+  max-width: 1400px;
+  margin: 120px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.membresia-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: auto;
+  margin: 60px;
+  gap: 50px;
+  opacity: 1;
+}
+
+.linea {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 1000px;
+}
+.membresia-info h2,
+.especializacion-info h2 {
+  font-family: "atma", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+.linea p {
+  font-family: "urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.membresia-img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.membresia-img img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.seccion_4 {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.cursos-container {
+  display: flex;
+  background-color: var(--fondo);
+  gap: 20px;
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: space-between;
+  width: 550px;
+  border-radius: 20px;
+}
+
+.curso-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  padding-top: 30px;
+}
+
+.curso-card h3 {
+  font-family: "urbanist", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.curso-card p {
+  font-family: "urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+  width: 500px;
+}
+
+.curso-card h4 {
+  font-family: "urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.curso-card img {
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.precio-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.precio-card h3 {
+  font-family: "urbanist", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.precio-card button {
+  background-color: var(--secundario);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "urbanist", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.precio-card h6 {
+  font-family: "urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.2;
+  color: var(--secundario);
+}
+
+.precio-card h6 span {
+  text-decoration: line-through;
+  color: gray;
+  font-weight: 300;
+}
+
+.especializacion-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: auto;
+  margin: 60px;
+  gap: 50px;
+  opacity: 1;
+}
+
+.titulo-animado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primario);
+  width: 100%;
+  height: 100px;
+}
+.titulo-animado h2 {
+  font-family: "atma", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+}
+
+.seccion_6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  gap: 20px;
+}
+
+.seccion_6 h2 {
+  font-family: "urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.apps img {
+  width: 150px;
+  height: 40px;
+}
+
+.footer-text,
+.list-footer a {
+  font-family: "urbanist", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.footer-text,
+.list-footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.list-footer li a {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--fondo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  /* right: 60px; */
+}

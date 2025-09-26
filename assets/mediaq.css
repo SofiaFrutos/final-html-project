@@ -1,0 +1,95 @@
+@media (max-width: 1320px) {
+  nav {
+    flex-direction: row-reverse;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: relative;
+    z-index: 100;
+  }
+  .list-nav {
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    background-color: var(--fondo);
+    width: 300px;
+    padding: 10px;
+    border: 2px var(--secundario) solid;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    display: none;
+  }
+
+  #menu-toggle:checked + .list-nav {
+    display: flex;
+  }
+
+  .membresia-img {
+    display: none;
+  }
+
+  .membresia-info,
+  .especializacion-info {
+    flex-direction: column;
+  }
+}
+
+/* CELULARES O PANTALLAS CHICAS  */
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-info {
+    display: none;
+  }
+  .texto-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto-info h1,
+  .texto-info p {
+    text-align: center;
+  }
+
+  .info-cards-container {
+    flex-direction: column;
+  }
+  .seccion_3,
+  .seccion_5,
+  .linea {
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  .membresia-info h2,
+  .especializacion-info h2 {
+    font-size: 30px;
+  }
+
+  .linea p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .seccion_3,
+  .seccion_5 {
+    max-width: 700px;
+  }
+
+  .membresia-info,
+  .especializacion-info {
+    gap: 20px;
+  }
+  .titulo-animado {
+    min-width: 800px;
+  }
+}
