@@ -37,7 +37,7 @@
 
 /* CELULARES O PANTALLAS CHICAS  */
 
-@media (max-width: 800px) {
+@media (max-width: 430px) {
   header {
     display: flex;
     align-items: center;
@@ -59,37 +59,100 @@
     text-align: center;
   }
 
+  /* SECCIÓN 2 */
   .info-cards-container {
     flex-direction: column;
   }
+  .seccion_2 {
+    max-width: 420px;
+    margin: 60px;
+  }
+
   .seccion_3,
   .seccion_5,
   .linea {
     flex-direction: column;
-    max-width: 500px;
+    max-width: 400px;
     justify-content: center;
     align-items: center;
   }
   .membresia-info h2,
   .especializacion-info h2 {
-    font-size: 30px;
-  }
-
-  .linea p {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .seccion_3,
-  .seccion_5 {
-    max-width: 700px;
+    font-size: 15px;
   }
 
   .membresia-info,
   .especializacion-info {
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
   }
+
+  .linea p {
+    font-size: 13px;
+    text-align: center;
+    width: 300px;
+  }
+
+  .titulo-animado h2 {
+    font-size: 20px;
+  }
+
   .titulo-animado {
-    min-width: 800px;
+    width: 400px;
+  }
+
+  .seccion_4 {
+    justify-content: center;
+    align-items: center;
+  }
+  .cursos-container {
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+  }
+
+  .curso-card {
+    transform: scale(0.8);
+  }
+
+  .especializacion-info {
+    gap: 10px;
+  }
+
+  .seccion_6 {
+    padding: 5px;
+    flex-wrap: nowrap;
+  }
+
+  .footer-text {
+    flex-direction: column;
+  }
+
+  .list-footer li a {
+    font-size: 10px;
+  }
+
+  form,
+  input,
+  select {
+    font-size: 17px;
+    padding: 6px;
+    margin-left: 10px;
+  }
+
+  .contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .contacto-form input {
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 300px;
   }
 }
