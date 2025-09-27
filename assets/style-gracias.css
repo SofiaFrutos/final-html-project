@@ -87,39 +87,36 @@ main {
   gap: 50px;
   margin-top: 50px;
   padding: 50px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
+  text-align: center;
 }
 
-textarea {
-  width: 500px;
-  height: 200px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 15px;
-  resize: vertical;
+.gracias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.gracias h1 {
+  font-family: "atma", sans-serif;
+  font-size: 50px;
+  color: #c993ce;
+}
+.gracias p {
+  font-family: "urbanist", sans-serif;
+  font-size: 30px;
+  max-width: 800px;
 }
 
-input {
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  padding: 7px;
-  margin-left: 30px;
-}
-
-button {
+.gracias button {
   background-color: var(--secundario);
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-family: "urbanist", sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
   cursor: pointer;
-  text-align: center;
 }
 button:hover {
   /* font-size: 20px; */

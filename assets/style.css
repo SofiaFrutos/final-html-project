@@ -426,3 +426,10 @@ label {
   position: absolute;
   /* right: 60px; */
 }
+
+button:hover {
+  /* font-size: 20px; */
+  background-color: #e9d6ec;
+  color: gray;
+  font-family: "atma", sans-serif;
+}

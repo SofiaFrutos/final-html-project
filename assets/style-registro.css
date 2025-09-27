@@ -61,3 +61,9 @@ form {
   align-items: center;
   gap: 16px; /* Espacio entre el texto y el select */
 }
+button:hover {
+  /* font-size: 20px; */
+  background-color: #e9d6ec;
+  color: gray;
+  font-family: "atma", sans-serif;
+}
