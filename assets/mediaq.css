@@ -37,7 +37,7 @@
 }
 
 /* TABLETS VERTICALES */
-@media (max-width: 830px) {
+@media (min-width: 830px) {
   .seccion_1 {
     flex-direction: column;
   }
