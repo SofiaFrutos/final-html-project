@@ -2,6 +2,11 @@
 @media (max-width: 1340px) {
   nav {
     flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .search-bar a {
+    justify-content: center;
   }
 
   .menu-toggle {
@@ -13,9 +18,11 @@
     flex-direction: column;
     position: absolute;
     top: 65px;
+    gap: 30px;
     background-color: var(--fondo);
     width: 300px;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     border: 2px var(--secundario) solid;
     border-top: none;
     border-radius: 0 0 20px 20px;

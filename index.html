@@ -11,6 +11,7 @@
       type="image/png"
       sizes="16x16"
       href="assets/icons/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/assets/animaciones.css" />
   </head>
   <body>
     <div class="oferta">15% OFF EN CURSOS SELECCIONADOS</div>
@@ -24,22 +25,31 @@
         </label>
         <input type="checkbox" id="menu-toggle" />
         <ul class="list-nav">
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="nosotros">NOSOTROS</a></li>
-          <li><a href="cursos">CURSOS CRAFTY</a></li>
-          <li><a href="diplomas">ESPECIALIZACIONES</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#premium">NOSOTROS</a></li>
+          <li><a href="#cursos">CURSOS CRAFTY</a></li>
+          <li><a href="#diplomas">ESPECIALIZACIONES</a></li>
+          <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
         </ul>
-        <div class="search-bar">
-          <img src="assets/bolsa_shop.png" alt="Carrito de compras" />
+        <div class="login-bar">
           <a href="login.html"
             ><img src="assets/icons/loggin.png" alt="Iniciar Sesión"
           /></a>
         </div>
+        <label for="cart-toggle" class="cart-toggle">
+          <img src="assets/bolsa_shop.png" alt="Carrito de compras" />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="cart">
+          <h3>¡OH NO! Tu carrito está vacío</h3>
+          <p>Agrega los cursos que desees aquí para comprarlos</p>
+          <a href="#" alt="Comprar cursos"><button>VER CURSOS</button></a>
+        </div>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
-      <section class="seccion_1">
+      <section class="seccion_1" id="inicio">
         <div class="texto-info">
           <h1>EL PODER <span>CREATIVO</span> ESTÁ EN TUS MANOS</h1>
           <p>
@@ -86,7 +96,7 @@
           </div>
         </div>
       </section>
-      <section class="seccion_3">
+      <section class="seccion_3" id="premium">
         <div class="membresia-info">
           <h2>ÚNETE AHORA A LA MEMBRESÍA PREMIUM</h2>
           <div class="linea">
@@ -111,7 +121,7 @@
       <div class="titulo-animado">
         <h2>CURSOS CRAFTY: DESPIERTA TU POTENCIAL CREATIVO</h2>
       </div>
-      <section class="seccion_4">
+      <section class="seccion_4" id="cursos">
         <div class="cursos-container">
           <div class="curso-card">
             <img
@@ -272,7 +282,7 @@
           </div>
         </div>
       </section>
-      <section class="seccion_5">
+      <section class="seccion_5" id="diplomas">
         <div class="especializacion-info">
           <h2>NUESTRAS ESPECIALIZACIONES</h2>
           <div class="linea">
