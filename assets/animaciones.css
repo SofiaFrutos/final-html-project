@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 63px;
+  scroll-padding-top: 112px;
 }
 
 .overlay {
@@ -20,4 +20,89 @@ html {
 #cart-toggle:checked ~ .overlay,
 #menu-toggle:checked ~ .overlay {
   display: block;
+}
+
+.list-nav li {
+  position: relative;
+}
+
+.list-nav li a::after {
+  content: ""; /*es importante, sino no anda*/
+  height: 2px;
+  width: 100%;
+  background-color: var(--secundario);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.list-nav li a:hover::after {
+  transform: scaleX(1); /*al hacer hover, la línea aparece*/
+  transform-origin: bottom left;
+}
+.list-nav li a:hover {
+  font-weight: bold;
+}
+
+.cart-toggle,
+.login-bar {
+  font-size: 40px; /* tamaño del ícono */
+  cursor: pointer; /* cambia el puntero a "mano" */
+  display: inline-block; /* necesario para que la animación funcione bien */
+  transition: transform 0.2s ease; /* transición suave */
+}
+
+.cart-toggle:hover,
+.login-bar:hover {
+  animation: bounce 0.5s ease; /* aplicamos la animación */
+}
+
+/* Definimos la animación */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* posición inicial/final */
+  }
+  50% {
+    transform: translateY(-10px); /* sube 10px */
+  }
+}
+/*Animación opacidad*/
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Animación de abajo hacia arriba*/
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*Animación de derecha a izquierda*/
+@keyframes slide-right {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  animation: fade 1s ease-in, slide-up 0.4s ease-in;
+}
+h1 span {
+  animation: fade 1s ease-in, slide-up 1.5s ease-in-out;
 }

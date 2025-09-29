@@ -110,17 +110,19 @@ main {
 .gracias button {
   background-color: var(--secundario);
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   font-family: "urbanist", sans-serif;
   font-size: 25px;
+  line-height: 1.5;
   font-weight: bold;
   cursor: pointer;
 }
 button:hover {
-  /* font-size: 20px; */
   background-color: #e9d6ec;
   color: gray;
   font-family: "atma", sans-serif;
+  line-height: 1.5; /*evita que se me deforme el contenido por el cambio del font*/
+  transition: all 0.1s ease-in;
 }

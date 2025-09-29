@@ -41,7 +41,11 @@ nav {
   position: relative top;
   z-index: 20;
 }
-
+.cart-toggle img,
+.login-bar a {
+  display: flex;
+  justify-content: center;
+}
 .login-bar {
   display: flex;
   gap: 20px;
@@ -126,6 +130,7 @@ div button {
   border-radius: 5px;
   font-family: "urbanist", sans-serif;
   font-size: 15px;
+  line-height: 1.5;
   font-weight: bold;
   cursor: pointer;
 }
@@ -318,6 +323,7 @@ div img {
   border-radius: 5px;
   font-family: "urbanist", sans-serif;
   font-size: 15px;
+  line-height: 1.5;
   font-weight: bold;
   cursor: pointer;
 }
@@ -464,14 +470,14 @@ label {
   display: none;
   position: absolute;
   z-index: 30;
-  /* right: 60px; */
 }
 
 button:hover {
-  /* font-size: 20px; */
   background-color: #e9d6ec;
   color: gray;
   font-family: "atma", sans-serif;
+  line-height: 1.5; /*evita que se me deforme el contenido por el cambio del font*/
+  transition: all 0.1s ease-in;
 }
 #cart-toggle:checked ~ .cart {
   display: flex;
