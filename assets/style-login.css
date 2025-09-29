@@ -64,6 +64,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   text-align: center;
+  line-height: 1.5;
 }
 
 .acciones a {
